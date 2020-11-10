@@ -8,7 +8,9 @@ Smart lights often feature smartphone or voice control, scheduling, and color an
 
 ## Project Details
 
-The smart light switch is based on the Arduino Nano 33 BLE Sense and uses the integrated APDS-9960 sensor for gesture control and brightness detection. Externally, a HC-SR501 PIR motion sensor is used for motion detection and an ESP8266 is used for controlling the WiFi light bulbs. Although tightly integrated with the Arduino environment, underlying Mbed OS APIs are used when possible.
+The smart light switch is based on the Arduino Nano 33 BLE Sense and uses the integrated APDS-9960 sensor for gesture control and brightness detection, and the integrated BLE transceiver in the nRF52840 MCU for person identification. Externally, a HC-SR501 PIR motion sensor is used for motion detection and an ESP8266 is used for controlling the WiFi light bulbs. Although tightly integrated with the Arduino environment, underlying Mbed OS APIs are used when possible.
+
+The focus of this project is the advanced gesture control feature. Existing gesture control systems either use cameras and complex neural networks (which require high computational power), or extremely simple hardware and algorithms which can only differentiate between a few different gestures. The Arduino Nano 33 BLE Sense provides a simple solution with the APDS-9960 sensor and can only differentiate between four directions with existing libraries. Using TinyML, we hope to expand the capabilities of the APDS-9960 gesture control system so it can detect simple hand signs as well as additional directions of gestures to allow for more complex commands in the computationally constrained environment.
 
 ## Project Timeline
 
