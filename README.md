@@ -158,3 +158,15 @@ Figure 9: Up-3 Gesture Data
 Results from the gesture detection model show that it is capable of properly identifying gestures if they are different enough. More work needs to be done to ensure the model can generalize better and not overfit. Low level photodiode parameters such as gain, drive strength, and pulse settings and their effects should also be investigated to potentially improve accuracy. Additionally, tests on optimal gesture distance should be conducted after modifying photodiode parameters, to see if it is possible to capture more of the hand if further away.
 
 The gesture detection architecture worked well with the smart switch and achieves high accuracy with a low number of training samples. In addition to responding to gestures, the smart switch also successfully incorporates multiple sensors to better respond to the environment. Future work could include better tuning the environment parameters and timeouts, and even learning and adapting the parameters according to user behavior during use.
+
+## Related Work
+
+Federico, J., Rigazio, L., & Raimbault, F. (2012). Low Cost Embedded Touchless Gesture Sensor. U.S. Patent No. US20120293404A1.
+
+M. Eggimann, J. Erb, P. Mayer, M. Magno and L. Benini, "Low Power Embedded Gesture Recognition Using Novel Short-Range Radar Sensors," 2019 IEEE SENSORS, Montreal, QC, Canada, 2019, pp. 1-4, doi: 10.1109/SENSORS43011.2019.8956617.
+
+Lucas F.S. Cambuim, Rafael M. Macieira, Fernando M.P. Neto, Edna Barros, Teresa B. Ludermir, Cleber Zanchettin,
+An efficient static gesture recognizer embedded system based on ELM pattern recognition algorithm,
+Journal of Systems Architecture, Volume 68, 2016, Pages 1-16, ISSN 1383-7621, https://doi.org/10.1016/j.sysarc.2016.06.002.
+
+Nasr Esfahani, Ebrahim & Karimi, Nader & Soroushmehr, S.M.Reza & Jafari, Mohammad & Khorsandi, Amin & Samavi, Shadrokh & Najarian, Kayvan. (2016). Hand Gesture Recognition for Contactless Device Control in Operating Rooms.
